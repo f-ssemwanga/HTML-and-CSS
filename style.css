@@ -2,7 +2,10 @@ h1,h2,p{
     text-align: center;
 }
 
-div {
+body{
+    background-image:url(beans.jpg);
+}
+.menu{
     width: 80%;
     background-color: burlywood;
     margin:auto auto;
