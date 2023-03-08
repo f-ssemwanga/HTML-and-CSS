@@ -10,3 +10,13 @@ body{
     background-color: burlywood;
     margin:auto auto;
 }
+
+.flavor{
+    text-align: left;
+}
+.price{
+    text-align: right;
+}
+.item p{
+    display: inline-block;
+}
