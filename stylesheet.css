@@ -8,7 +8,7 @@ h1{
 
 }
 .red{
-    background:linear-gradient(90deg,rgb(255,0,0), rgb(0,255,0))
+    background:linear-gradient(90deg,rgb(255,0,0) 75%, rgb(0,255,0),rgb(0,0,255));
 }
 .green{
     background-color:rgb(0,255,0);
@@ -26,4 +26,3 @@ Azure (blue+cyan)
 rose(red+magenta)
 Cyan(0,255,255)
 
-#hsl colour
