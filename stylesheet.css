@@ -7,14 +7,14 @@ h1{
     margin: 10px auto;
 
 }
-.one{
-    background-color:rgb(255,0,0);
+.red{
+    background:linear-gradient(90deg,rgb(255,0,0), rgb(0,255,0))
 }
-.two{
-    background-color:rgb(0,127,255);
+.green{
+    background-color:rgb(0,255,0);
 }
-.three{
-    background-color:rgb(255,0,127);
+.blue{
+    background-color:rgb(0,0,255);
 }
 .container{
 background-color: rgb(255, 255,255);
@@ -25,3 +25,5 @@ Chartreuse gree (green+yellow)
 Azure (blue+cyan)
 rose(red+magenta)
 Cyan(0,255,255)
+
+#hsl colour
