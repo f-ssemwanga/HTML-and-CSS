@@ -24,8 +24,7 @@ background-color: rgb(255, 255,255);
     width: 110px;
     height: 25px;
     background-color:rgb(255,255,255,50%);
-    border-left-width: 10px;
-    border-left-style: solid;
+    border-left: 10px double rgb(0,0,0,75%); /* short hand width style color */
     /*opacity: 0.5; can be replaced with the alpha value in the line above */
 }
 .cap{
