@@ -37,3 +37,16 @@ input,textarea,select{
     margin-right:0;
     width:100%;
 }
+.inline{
+    width:unset; /*removes the width set earlier of 100*/
+    margin-right:0.5em;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+    vertical-align: middle; /*required as inline properties appear too high*/
+}
+/*Blend the input and text area with the backgroud*/
+input,textarea{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+}
