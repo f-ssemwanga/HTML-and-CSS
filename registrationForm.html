@@ -23,10 +23,13 @@
             
         </fieldset>
         <fieldset>
-            <!--Type of account and confirms user read the terms-->
-            <label for=""><input type="radio"> Personal Account</label>
-            <label for=""><input type="radio"> Business Account</label>
-            <label for=""><input type="checkbox" required> I accept the terms and conditions</label>
+            <!--Type of account and confirms user read the terms
+                - account-type property ensures only one radio is selectable
+                - for and Id property links the input fields and labels together
+            -->
+            <label for="personal-account"><input type="radio" name="account-type" id="personal-account"> Personal Account</label>
+            <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business Account</label>
+            <label for="terms-and-conditions"><input type="checkbox" required id="terms-and-conditions"> I accept the terms and conditions</label>
         </fieldset>
         <fieldset>
 
