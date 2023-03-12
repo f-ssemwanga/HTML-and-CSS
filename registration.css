@@ -5,3 +5,7 @@ body{
     background-color: #1B1B32;
     color: #f5f6f7;
 }
+label{
+    display:block; /*Labels are in line by defauls*/
+    margin: 0.5rem 0; /*rem is root em and is relative to font size of the html*/
+}
