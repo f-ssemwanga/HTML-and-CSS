@@ -32,11 +32,11 @@
             <label for="terms-and-conditions"><input type="checkbox" required id="terms-and-conditions"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/"> terms and conditions</a></label>
         </fieldset>
         <fieldset>
-            <label for="">Upload a profile <input type="file"/> </label>
-            <label for="">Input your age (years): <input type="number" min="13" max="120"></label>
-            <label for="">
+            <label for="profile-picture">Upload a profile <input type="file" id="profile-picture"/> </label>
+            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120"></label>
+            <label for="referrer">
                 How did you hear about us?
-                <select name="" id="">
+                <select name="" id="referrer">
                 <option value=" ">(Select one)</option>
                 <option value="1">freeCodeCamp News</option>
                 <option value="2">freeCodeCamp YouTube Channel</option>
@@ -44,8 +44,8 @@
                 <option value="4">Other</option>
                 </select>
             </label>
-            <label for="">
-               Provide a bio: <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="bio">
+               Provide a bio: <textarea name="" id="bio" cols="30" rows="10"></textarea>
             </label>
         </fieldset>
         <input type="submit" value="Submit"><!--submits the form element-->
