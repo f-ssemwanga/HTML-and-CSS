@@ -13,10 +13,12 @@
     <form action="https://register=demo.freecodecamp.org" method="post">
         <fieldset>
             <!--for attribute and id pair link the label and input fields for accessibility-->
-            <label for="first-name">Enter your First Name: <input type ="text" id="first-name"/></label>
-            <label for="last-name">ENter your Last Name: <input type="text" id="last-name"/></label>
-            <label for="email">Enter your Email: <input type="email" id="email"/></label>
-            <label for="new-password">Create a new Password: <input type="password" id="new-password"/></label>
+            <!--The first input element with a type of submit is automatically set to submit its  nearest parent form element-->
+            <label for="first-name">Enter your First Name: <input required type ="text" id="first-name"/></label>
+            <label for="last-name">ENter your Last Name: <input required type="text" id="last-name"/></label>
+            <label for="email">Enter your Email: <input required type="email" id="email"/></label>
+            <label for="new-password">Create a new Password: <input required type="password" id="new-password"/></label>
+            
         </fieldset>
         <fieldset>
 
@@ -24,6 +26,7 @@
         <fieldset>
 
         </fieldset>
+        <input type="submit" value="Submit"><!--submits the form element-->
     </form>
 </body>
 </html>
