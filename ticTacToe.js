@@ -5,9 +5,8 @@ let currentPlayer = "X";
 
 
 squares.forEach(square => {
-    square.addEventListener('click', function(){
-       console.log("You are here")
-       if (square.innerHTML === ""){
+     square.addEventListener('click', function(){
+     if (square.innerHTML === ""){
             square.innerHTML = currentPlayer;
             currentPlayer = currentPlayer==="X" ?"O" :'X';
             alert('Your code is here')
