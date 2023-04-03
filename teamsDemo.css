@@ -1,0 +1,37 @@
+:root{
+    /*  */
+    --background-color:#000000;
+    --textColor:#ffffff;
+    /*  */
+    --sizeXs:0.5em;
+    --sixeSm:calc(var(var(--sizeXs)*1.25))
+    --sixeMd:calc(var(var(--sizeXs)*1.25))
+    --sixeLg:calc(var(var(--sizeXs)*1.25))
+    --sixeXl:calc(var(var(--sizeXs)*1.25))
+
+    /* styles */
+    --boxShadow:none;
+    --border:none;
+    --borderRadius: none;
+    
+}
+.lightMode{
+    --background-color:#ffffff;
+    --textColor:#222222;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    background:none;
+    border:none;
+    border-radius: none;
+}
+body{
+    background-color: var(--background-color);
+    color:var(--textColor);
+    min-height:100svh;
+    max-width: 100svw;
+    display:flex;
+
+}

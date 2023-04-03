@@ -1,0 +1,54 @@
+
+body{
+    /* remove default margin */
+    margin: 0; 
+}
+
+.container{
+    width: 100vw;
+    height:100vh;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    /* specify that the container is a grid */
+    display: grid;
+    /* specfify rows and columns */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 100px;
+    /* 
+    short hand for the above starting with rows and then columns
+    grid-template: 50px 1fr 1fr 100px /repeat(3, 1fr);
+    
+    */
+    /* specify gap between areas */
+    gap: 10px;
+
+    /* adding padding and box sizing to keep padding as part of container width */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container div{
+    padding:10px;
+    border: 1px solid #000000;
+}
+/* making the header div to span the 3 columns
+use grid column start and column end
+
+*/
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.content-large{
+    grid-row-start: 2;
+    grid-row-end: span 2; /*start at 2 and span 2 more */
+}
+.content-small{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+.footer{
+    grid-column: 1 / span 3;/*short hand for grid column start  1 and grid column span 3 */
+}

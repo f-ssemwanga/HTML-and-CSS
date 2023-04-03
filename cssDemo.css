@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
+/* Pseudo selector for the entire page is root and
+ loads before the html 
+ - all variables must start with --
+ */
+:root{
+    --brandColor:rgb(2, 2, 27);
+    --paddingSmall: 1.5;
+    --paddingMd:calc(var(--paddingSm)*1.25);
+    --paddingLg:calc(var(--paddingMd)*1.25);
+    --paddingXs:calc(var(--paddingSm)*0.75);
+   
+   
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+ font-family: 'Roboto', sans-serif;
+ color:white;
+ background-color: var(--brandColor);/* a variable call*/
+}
+h1, h2, h3, h4, h5{
+ font-family: 'Poppins', sans-serif;
+
+}
+/* styling anchor tags */
+a, a:visited, a:hover, a:active{
+    color:white;
+    text-decoration: none;
+    font-size: 2em;
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+nav ul{
+    list-style-type:none ;
+}
+nav ul li{
+   font-size:var(--paddingXs);
+}
+/* playing with spacing 
+padding 
+*/
+section {
+    padding: 12px;
+    background-color: black;
+    border: solid 1px;
+    margin-top: 16px;
+}
+
+/* Overrriding some defaults above 
+a[href="#home"]{
+    background-color:aqua ;
+    color: black;
+}*/
+
+#home h2{
+    color:aqua;
+    
+}
+#links{
+    background-color:aqua;
+    color:black
+    
+}

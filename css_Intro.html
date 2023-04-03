@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="cssDemo.css">
+    <!-- 
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+
+         -->    
+</head>
+<body>
+    <!--  ()+()+(footer>section*3>h2+p>lorem)
+    (header>h1+nav>ul>li*3>a>lorem1)+(main>section*3>h2+p*3>lorem)+(footer>section*3>h2+p>lorem) - 
+    ctrl+space to bring the emmet hint and then confirm
+    -->
+    <header>
+        <h1>Acme Inc</h1>
+        <nav id="mainnav">
+            <ul id="mainnav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque, adipisci perspiciatis doloremque nisi aspernatur voluptas assumenda accusantium sapiente illum maxime deserunt sunt esse harum provident ducimus possimus fugit non.</p>
+            <p>Perspiciatis repellat magnam beatae assumenda nesciunt necessitatibus animi? Rem tempore culpa eius laborum maxime quisquam officiis minima! Consectetur eos exercitationem maxime expedita vitae earum error aspernatur asperiores eum, ipsum aut.</p>
+            <p>Quaerat, sint! Ratione quis vitae optio quaerat tenetur nesciunt tempora! Qui, exercitationem ducimus. Dicta ad quaerat maxime eligendi, dolor iure dignissimos numquam ullam nihil. Veritatis minima quos corrupti deserunt tenetur.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores aliquam, nam eaque, labore ad ab quaerat, veritatis exercitationem suscipit id magnam? Impedit, saepe obcaecati! Animi vitae quidem est illo?</p>
+            <p>Praesentium illo fugit officiis asperiores laborum culpa! Cum, fugit. Sunt quos veritatis eaque quam consectetur commodi ad? In culpa iure eius corporis laboriosam quam, magnam optio, cumque omnis possimus maiores!</p>
+            <p>Nulla accusantium excepturi aliquid minus doloribus illo accusamus laudantium eligendi, inventore omnis est ab tempore corporis quas, vero neque sapiente facere, dolorum assumenda rem quisquam reprehenderit earum odio! Rerum, est!</p>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod non, autem voluptas accusamus corrupti natus soluta molestiae nulla facere ad ea veritatis minus, possimus neque eaque atque. Optio, modi quod.</p>
+            <p>Voluptatem odit dolor rem sed aspernatur ea iste quae, eos, voluptatibus consequuntur eaque obcaecati esse deleniti, quasi doloribus amet. Earum consequatur dignissimos eos eum ipsum amet, impedit non aperiam recusandae!</p>
+            <p>Dignissimos, iure quam? Necessitatibus numquam quo, repellat, iusto suscipit, nemo nostrum dolores nisi enim omnis architecto fuga cum neque velit eius? At magni delectus in? Nam, commodi dolorem. Illo, adipisci.</p>
+        </section>
+    </main>
+    <footer>
+        <section id="company-info" title="Company info">
+            <h2>Resources</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quod blanditiis harum rerum necessitatibus explicabo a esse rem enim ipsam ipsum? Odit ut et, cupiditate accusantium ullam a eaque eveniet?</p>
+        </section>
+        <section>
+            <h2>Resources</h2>
+            <p>Molestias natus consectetur unde consequatur molestiae dignissimos laudantium odio earum id, aliquam distinctio maiores incidunt atque perspiciatis fugit facilis alias. Optio, illo facere inventore temporibus expedita veritatis molestiae harum ducimus?</p>
+        </section>
+        <section id="links">
+            <h2>Links</h2>
+            <nav id="footernav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

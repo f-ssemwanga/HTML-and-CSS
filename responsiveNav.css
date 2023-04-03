@@ -1,0 +1,136 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* remove browser defaults */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #353836;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+/* remove all text decorations from the links in the header */
+header a{
+    text-decoration: none;
+}
+
+header{
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height:50px;
+    display: flex;
+    justify-content:space-between;/*pushes the brand div left and navigation right */
+}
+/* format the brand div */
+#brand{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center; /*centers it vertically in its parent container i.e. header*/
+}
+#brand a{
+    color: #09c372;
+}
+/* formatting the navigation links */
+ul{
+    list-style: none;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* font color of links */
+
+ul li{
+    padding:5px;
+    margin-left: 10px;
+
+}
+
+/* add some hover effects */
+ul li:hover{
+    transform: scale(1.1);
+    transition:0.3s;
+    color: aquamarine;
+
+}
+/* login and signup buttons */
+.login,
+.signup{
+    border-radius: 5px;
+    padding: 5px 8px;
+    
+}
+/* .signup{
+    border: 1px solid #498afb;
+} */
+.signup {
+    color:#498afb;
+}
+/* .login{
+    border: 1px solid #ff3860;
+} */
+.login {
+    color:#ff3860;
+}
+/* Mobile menu starts here  */
+/* styling the hamburger icon */
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+/* styling bars in the humberger icon */
+#hamburger-icon div{
+    width:35px;
+    height:3px;
+    background-color:white;
+    margin: 6px 0;
+    transition: 0.4s;
+  
+}
+/* humberger animation - these classes will be toggled in javascript*/
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px,6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+/* fade out the middle bar */
+.open .bar2{
+    opacity: 0;
+}
+/* rotate the 3rd bar with positive 45 degrees */
+.open .bar3{
+    -webkit-transform: rotate(-45deg) translate(-6px,-8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+/* Style the mobile menu with flex direction column */
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* Position the mobile menu using absolute positioning relative to the body*/
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top:50px;
+    left:0;
+    height:cal(100vh-50px);
+    width: 100%;
+}
+
+
+/* Media query to hide the desktop navigation if the viewport falls below a particular width */
+@media only screen  and (max-width:600px){
+    header nav{
+        display: none;
+    }
+    /* make sure the hamburger icon only displays in the mobile view */
+    #hamburger-icon{
+        display: block;
+    }
+}

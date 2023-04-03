@@ -1,0 +1,52 @@
+
+
+/* initial styling to display the 3 elements */
+body{
+    background-color: #333;
+    color: yellow;
+}
+.flexboxItem{
+    width: 100px;
+    margin:10px;
+    border: 3px solid #000;
+    background-color: #dfdfdf;
+    color:black
+}
+.flexboxItem1{
+    min-height: 100px;
+    flex-shrink: 0; /*ensures this item does not shrink */
+ 
+}
+.flexboxItem2{
+    min-height: 200px;
+    flex-grow: 2;
+    flex-basis: 0; /*tells item where to grow from */
+}
+.flexboxItem3{
+    min-height: 300px;
+    flex-grow: 1; /*Allows item to take up more space*/
+    flex-basis: 0; 
+}
+
+/* applying flex box layout
+-flex box allows to style flexibility of the elements in a container
+- you can line up the items in the container
+- you can also decide how the items need to grow within the container
+
+
+- main axix = horizontally layout is horizontal 
+- Cross Axis  = vertically if layout is horizotal
+-Axes flip if layour is reversed / direction
+
+Elements are styled on main axis or cross axis
+*/
+.flexboxContainer{
+    background-color: yellow;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /*align-items: center; aligns items along the axix*/
+}
+
+/* affecting sizes of elements in the container */
+

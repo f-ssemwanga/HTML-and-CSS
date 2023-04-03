@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="responsiveNav.css">
+</head>
+<body>
+    <header>
+        <div id="brand"><a href="/">DS-SALES</a></div>
+        <nav>
+            <ul>
+                <li><a href="/home"></a>Home</li>
+                <li><a href="/products"></a>Products</li>
+                <li><a href="/about"></a>About</li>
+                <li class="login"><a href="/login"></a>Login</li>
+                <li class="signup"><a href="/signup"></a>Signup</li>
+            </ul>
+        </nav>
+        <!-- Mobile menu added after formatting the desktop menu -->
+        <!--add an onclick attribute to the humburger icon passing the 'this' parameter 
+        Also add the script tag in the bottpm of the document
+        -->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/home"></a>Home</li>
+                    <li><a href="/products"></a>Products</li>
+                    <li><a href="/about"></a>About</li>
+                    <li class="login"><a href="/login"></a>Login</li>
+                    <li class="signup"><a href="/signup"></a>Signup</li>
+                </ul>
+        </div>
+        <!-- Mobile menu ends here -->
+    </header>
+    <script src="index.js"></script>
+</body>
+</html>
